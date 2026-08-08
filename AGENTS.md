@@ -2,6 +2,18 @@
 
 > 本仓库是 skills-repo 组织下的动画工程师技能库。面向独立开发者和前端开发者，覆盖动效原理、CSS 动画、移动端交互和 React 声明式动画，帮你为产品注入专业级动效体验。
 
+## 架构与加载顺序（superpower）
+
+本仓库按 skills-repo 的 **superpower 架构**组织，Agent 加载顺序如下：
+
+1. **先读 `SKILL.md`（L1 路由层）** — 只做能力索引，不要在此找方法论正文。
+2. **按需读 `references/`（L2）** — 技术选型、CSS 关键帧纪律、性能可访问性、动效设计系统，按任务类型加载，不全量读。
+3. **落地具体栈时读 `skills/<name>/SKILL.md`（L3）** — 动效原理 / Tailwind / 移动触控 / Framer Motion 的细粒度能力。
+4. **确定性任务用 `scripts/`（L4）** — CSS 关键帧 lint，产物可复现。
+5. **模板套用看 `assets/`（L5）** — lint 规则、规范 CSS、检查清单。
+
+渐进式加载原则：先路由、后深度；不凭记忆猜缓动曲线与关键帧写法。
+
 ## 技能清单
 
 | 环节 | 技能 | 文件 | 用途 |
@@ -23,5 +35,6 @@
 - `design-studio` — UI/UX 设计（设计系统、UI审查、无障碍），本仓库聚焦动效与动画
 - `frontend-engineer` — 前端组件开发、性能优化，本仓库聚焦交互动画层面
 - `indie-game-developer` — 游戏开发（Three.js 游戏），本仓库聚焦 Web/移动端 UI 动效
+- `mobile-developer` — 移动端开发，本仓库提供移动端触控动效能力
 
 > 本仓库聚焦**Web 和移动端 UI 动效的设计与实现**，与 design-studio 的 UI 设计视角互补，与 frontend-engineer 的组件开发视角协同。
