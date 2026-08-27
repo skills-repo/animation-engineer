@@ -156,4 +156,18 @@ Framer Motion 自带 `useReducedMotion()` hook；Tailwind 有 `motion-reduce:` /
 
 要点：**先量后改**，Paint flashing 一眼定位"动了什么属性"，换成 transform/opacity 即解。
 
+## 相关子技能与层次边界
+
+本 playbook 负责**动效性能与可访问性**（合成层/GPU、主线程、reduced-motion 降级、眩晕防护）的跨栈底线；
+各子技能在各自写法上接入这条底线。层次边界：
+
+- 原理（GPU 属性/reduced-motion 概念）→ `skills/animation-vocabulary/SKILL.md`：transform/opacity 与降级的概念来源。
+- React 降级 → `skills/framer-motion/SKILL.md`：用 `useReducedMotion()` 在 JS 侧接 reduced-motion。
+- Tailwind 降级 → `skills/tailwind-animations/SKILL.md`：`motion-reduce:` / `motion-safe:` 变体直接套用。
+- 移动端降级 → `skills/mobile-touch/SKILL.md`：触控反馈 60fps 与 reduced-motion 下的物理动效降级。
+- 兄弟参考：
+  - `references/css-keyframes-playbook.md`：transform/opacity 纪律是性能底线的具体写法。
+  - `references/motion-design-system.md`：reduced-motion 在 token 层统一降级（§12）。
+  - `references/decision-animation-tech.md`：选型时就避开主线程动画（§4 CSS/JS 边界）。
+
 

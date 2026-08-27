@@ -141,3 +141,16 @@ CSS 自定义属性默认不能平滑插值（只认关键字切换）。用 `@p
 `scripts/lint_css_keyframes.py` 固化本篇纪律：查重名（E1）、查起止无 transform/opacity（E2）、
 警告 layout 属性（W）与未定义引用（W）。CI 里跑，缺一项即红，避免"能跑但不规范"的静默劣化。
 
+## 相关子技能与层次边界
+
+本 playbook 负责**裸 CSS @keyframes 的写法纪律**（只动 transform/opacity、命名/重名、起止 GPU 属性、will-change/合成层），
+由 `scripts/lint_css_keyframes.py` 固化成门禁；子技能负责各自栈的"怎么写"。层次边界：
+
+- 原理层 → `skills/animation-vocabulary/SKILL.md`：缓动曲线、时长、GPU 加速属性的概念来源；本篇是这些概念在裸 CSS 上的可执行纪律。
+- Tailwind 关键帧 → `skills/tailwind-animations/SKILL.md`：在 `tailwind.config` 里定义的 `@keyframes` 同样受本篇 lint 约束（重名/起止），互补而非替代。
+- 不写裸 @keyframes 的栈 → `skills/framer-motion/SKILL.md` / `skills/mobile-touch/SKILL.md`：走各自库的声明式 API（variants / 手势），不适用本篇纪律。
+- 兄弟参考：
+  - `references/decision-animation-tech.md`：先选"裸 CSS 关键帧"还是其它栈（决策树 §1/§9）。
+  - `references/motion-design-system.md`：时长/缓动 token 统一，避免散落魔法数字。
+  - `references/performance-accessibility.md`：transform/opacity 与 reduced-motion 降级（性能底线）。
+

@@ -62,3 +62,11 @@ tags:
 - 覆盖移动端 Web（PWA/H5），不涉及 iOS/Android 原生 SDK 动画
 - 手势动效聚焦通用模式，不涉及游戏级的手势系统
 - 复杂物理引擎（如多体碰撞）建议用专用的物理库
+
+## 相关参考（Playbook）
+
+移动端触控动效之外的决策与底线 →
+
+- 何时选 mobile-touch（移动触控手势 vs 其它栈）→ `references/decision-animation-tech.md`
+- 性能与可访问性（60fps 触控、reduced-motion 降级）→ `references/performance-accessibility.md`
+- 动效设计系统（触控反馈时长走 token、跨端一致）→ `references/motion-design-system.md`

@@ -62,3 +62,11 @@ tags:
 - 覆盖 Framer Motion 核心功能，不涉及 motion-plus 和高级 3D
 - 需要 React 项目环境，不适用于非 React 技术栈
 - 复杂 3D 动画建议用 Three.js + React Three Fiber 补充
+
+## 相关参考（Playbook）
+
+React 动效落地之外的决策与底线 →
+
+- 何时选 Framer Motion（React 编排/手势 vs 其它栈）→ `references/decision-animation-tech.md`
+- 性能与可访问性（useReducedMotion 降级、GPU 属性）→ `references/performance-accessibility.md`
+- 动效设计系统（variants 编排、时长/缓动 token）→ `references/motion-design-system.md`

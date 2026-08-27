@@ -61,3 +61,12 @@ tags:
 - 覆盖动效设计原则和 CSS 实现，不涉及 Lottie/Rive 等动画工具
 - 聚焦 Web 平台动效，不涉及原生 App 动画（iOS/Android）
 - 动效规范聚焦独立产品，非大型设计系统的完整动效库
+
+## 相关参考（Playbook）
+
+动效原理落到规范与工程的深度资料 →
+
+- 选型决策（何时用裸 CSS / Framer Motion / Tailwind / 其它）→ `references/decision-animation-tech.md`
+- 裸 CSS 关键帧纪律（transform/opacity、起止、重名）+ lint → `references/css-keyframes-playbook.md`
+- 性能与可访问性（GPU/合成层/reduced-motion 降级）→ `references/performance-accessibility.md`
+- 动效设计系统（时长/缓动 token、编排、一致性）→ `references/motion-design-system.md`

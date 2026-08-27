@@ -164,4 +164,18 @@ token 不是孤立变量，要落地进组件库的默认样式：
 
 任一项不过，PR 打回——动效规范是"规范"不是"建议"，靠评审 + lint 双守才不会漂移。
 
+## 相关子技能与层次边界
+
+本 playbook 负责**动效设计规范系统**（时长/缓动 token、编排与 stagger、跨组件一致性），
+把 `animation-vocabulary` 的原理落成可落地的 token 与评审门禁；各子技能是规范的具体落地栈。层次边界：
+
+- 原理 → token → `skills/animation-vocabulary/SKILL.md`：缓动/时长/编排原则在此落成 `--motion-*` token 与分级规范。
+- React 落地 → `skills/framer-motion/SKILL.md`：variants 编排、staggerChildren 直接消费本篇 token。
+- Tailwind 落地 → `skills/tailwind-animations/SKILL.md`：`animate-*` 类引用 token，避免硬编码 ms。
+- 移动端落地 → `skills/mobile-touch/SKILL.md`：触控反馈时长/弹簧也走同一套 token，保持跨端一致。
+- 兄弟参考：
+  - `references/css-keyframes-playbook.md`：token 之外的裸 CSS 关键帧纪律。
+  - `references/performance-accessibility.md`：规范里的 reduced-motion 降级分级。
+  - `references/decision-animation-tech.md`：先选型、再套规范。
+
 

@@ -62,3 +62,12 @@ tags:
 - 聚焦 Tailwind CSS 动画生态，不涉及 JS 动画库
 - 复杂编排动画（如 Scroll-Linked）建议用 Framer Motion 补充
 - 支持 Tailwind v3/v4 语法，不覆盖 Tailwind v2
+
+## 相关参考（Playbook）
+
+Tailwind 动画之外的决策与底线 →
+
+- 何时选 Tailwind 动画（快速反馈 vs Framer Motion/GSAP）→ `references/decision-animation-tech.md`
+- 裸 CSS 关键帧纪律（Tailwind 配置的 @keyframes 也受 lint 约束）→ `references/css-keyframes-playbook.md`
+- 性能与可访问性（motion-reduce/motion-safe 降级）→ `references/performance-accessibility.md`
+- 动效设计系统（animate 类引用 token、避免硬编码 ms）→ `references/motion-design-system.md`

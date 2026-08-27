@@ -124,3 +124,16 @@ el.animate(
 > 我选〔技术〕不选〔A〕/〔B〕：① 〔A〕在〔维度〕不满足〔约束〕；
 > ② 项目是〔栈〕，〔技术〕契合；③ 〔风险〕有〔缓解〕。若未来〔触发〕，则回到 §4 重评。
 
+## 相关子技能与层次边界
+
+本 playbook 负责**动效技术选型决策**（先选哪套技术，决策树 + 矩阵 + 反向论证）；选完之后"某栈具体怎么写"由各子技能负责。层次边界：
+
+- React 编排/手势 → `skills/framer-motion/SKILL.md`：决策树 Q0 命中"React + 编排/手势"时落地。
+- 移动端触控 → `skills/mobile-touch/SKILL.md`：决策树 Q4 命中"移动触控手势"时落地。
+- Tailwind 快速反馈 → `skills/tailwind-animations/SKILL.md`：单纯过渡/入场 stagger 走 Tailwind 动画类。
+- 原理/词汇 → `skills/animation-vocabulary/SKILL.md`：缓动、时长、GPU 属性等选型依据的概念层。
+- 兄弟参考：
+  - `references/css-keyframes-playbook.md`：选了"裸 CSS"后的关键帧写法纪律 + lint。
+  - `references/motion-design-system.md`：设计系统层的时长/缓动 token 规范。
+  - `references/performance-accessibility.md`：选型时就要考虑的 GPU/reduced-motion 底线。
+
