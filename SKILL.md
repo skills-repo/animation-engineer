@@ -81,4 +81,6 @@ python3 scripts/lint_css_keyframes.py --css src/ --config assets/motion-rules.js
 - 需要**移动端开发**细节 → 调用 `mobile-developer`
 - 需要**独立游戏动效**场景 → 调用 `indie-game-developer`
 - 需要**视觉/UI 设计** → 调用 `design-studio`
+- 需要**前端组件工程化**（原 `frontend-engineer` 已归档并入）→ 调用 `ai-fullstack-engineer`
+- 需要**无障碍工程**深度（WCAG/读屏，本库只负责动效侧降级）→ 调用 `accessibility-engineer`
 - 需要**文档**（动效规范文档/更新日志）→ 调用 `docs-writer`

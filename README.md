@@ -52,6 +52,7 @@ python3 scripts/lint_css_keyframes.py --css src/ --config assets/motion-rules.js
 ## 与本组织其他仓库的关系
 
 - **design-studio** — UI/UX 设计（设计系统、UI审查），本仓库聚焦动效与动画实现
-- **frontend-engineer** — 前端组件开发、性能优化，本仓库聚焦交互动画层面
+- **ai-fullstack-engineer** — 前端组件开发与性能优化（原 frontend-engineer 已归档并入此仓库），本仓库聚焦交互动画层面
+- **accessibility-engineer** — 无障碍工程（WCAG、键盘/读屏），本仓库负责动效侧的 `prefers-reduced-motion` 降级
 - **indie-game-developer** — 游戏开发（Three.js），本仓库聚焦 Web/移动端 UI 动效
 - **mobile-developer** — 移动端开发，本仓库提供移动端触控动效能力
